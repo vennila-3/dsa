@@ -1,0 +1,50 @@
+BUBBLE SORT:
+       it is called bubble sort because the movement of array elements is just like the movement of air bubbles in the water.
+       Bubbles in water rise up to the surface; similarly, the array elements in bubble sort move to the end in each iteration.
+       Bubble sort is a type of sorting algorithm you can use to arrange a set of values in ascending order.
+       If you want, you can also implement bubble sort to sort the values in descending order.
+
+  MAJOR USES:
+       complexity does not matter
+       simple and shortcode is prefer
+       
+ REAL TIME EXAMPLE:
+      A real-world example of a bubble sort algorithm is how the contact list on your phone is sorted in alphabetical order.
+      Or the sorting of files on your phone according to the time they were added.
+      
+:
+  
+        public class Main
+        {
+	     public static void main(String[] args) {
+       int a[]={5,2,7,3,1},n=5;
+       boolean isswapped=false;
+       //Bubble sorting 
+       for(int i=n-1;i>0;i--)
+       {  isswapped=false;
+       for(int j=0;j<n-1;j++){
+       if(a[j]>a[j+1]){
+          int temp=a[j];
+          a[j]=a[j+1];
+          a[j+1]=temp;
+          isswapped=true;
+        }
+      }
+       if(isswapped==false)
+       break;
+      }  
+   for(int i=0;i<n;i++)
+   System.out.print(a[i]+" ");
+	 }
+   }
+
+
+Advantages:
+he primary advantage of the bubble sort is that it is popular and easy to implement.
+In the bubble sort, elements are swapped in place without using additional temporary storage.
+The space requirement is at a minimum
+
+DISADVANTAGE:
+The main disadvantage of the bubble sort is the fact that it does not deal well with a list containing a huge number of items.
+The bubble sort requires n-squared processing steps for every n number of elements to be sorted.
+The bubble sort is mostly suitable for academic teaching but not for real-life applications.
