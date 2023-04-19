@@ -15,3 +15,29 @@ TIME COMPLEXITY
        Best Case O(n2)
        Average Case O(n2)
        Worst Case  O(n2)
+
+IMPLEMENTATION:
+
+
+        public class Main
+    {
+	public static void main(String[] args) {
+   int a[]={5,2,7,3,1,0,-1};
+   //selection sorting 
+   int minIndex,i,j;
+   for(i=0;i<7-1;i++)
+   {  minIndex=i;
+      for(j=i+1;j<7;j++)
+      { //selecting
+        if(a[minIndex]>a[j])
+        minIndex=j;
+      }
+      //swapping
+      int temp=a[minIndex];
+      a[minIndex]=a[i];
+      a[i]=temp;
+   }
+  for(i=0;i<7;i++)
+  System.out.print(a[i]+" ");
+	}
+}
