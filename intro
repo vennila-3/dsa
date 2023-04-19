@@ -1,0 +1,19 @@
+What is a Sorting Algorithm?
+      Sorting algorithms are a set of instructions that take an array or list as an input and arrange the items into a particular order (sorting particular ordder)
+      
+why we use Sorting
+      reduce the complexity of a problem
+      These algorithms have direct applications in searching algorithms database algorithms, divide and conquer methods, data structure algorithms, and many more.
+
+TYPES:
+     Selection sort
+     Bubble sort
+     Insertion sort
+     Merge sort
+     Quick sort
+     Heap sort
+    Counting sort
+    Radix sort
+    Bucket sort
+
+
