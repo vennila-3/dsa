@@ -11,9 +11,9 @@ WHY?
         It is often used in conjunction with other algorithms, such as quicksort, to improve the overall performance of a sorting routine.
         
 IMPLEMENTATIONS:
-    import java.util.*;
-public class Main
-{
+       import java.util.*;
+       public class Main
+       {
 	public static void main(String[] args) {
 	    Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
@@ -22,7 +22,7 @@ public class Main
 		{
 		    a[i] = sc.nextInt();
 		}
-		MergeSort(a,0,n-1);
+		MergeSort(a,0,n-1);     a-array 0-starting index   n-1--size of array
 		for(int i=0;i<n;i++)
 		{
 		    System.out.print(a[i]+" ");
@@ -35,11 +35,12 @@ public class Main
 	    {
 	        return ;
 	    }
-	    int mid = low+(high-low)/2;
+	    int mid = low+(high-low)/2;     // to reduce the overflow we add low
 	    MergeSort(a,low,mid);
 	    MergeSort(a,mid+1,high);
 	    Merge(a,high,mid,low);
 	}
+	
 	//merge2sortedArrays
 	public static void Merge(int[] a,int high,int mid,int low)
 	{
