@@ -5,6 +5,8 @@ couting sort:
    
    counting sort makes is input data will be positive integers.
    other algorithms this sorting algorithm is not a comparison-based algorithm, it hashes the value in a temporary count array and uses them for sorting
+   Time Complexity: O(N + K) where N is the number of elements in the input array and K is the range of input. 
+   Auxiliary Space: O(N + K)
    
    import java.util.*;
 
