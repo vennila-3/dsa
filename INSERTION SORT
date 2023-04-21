@@ -1,44 +1,10 @@
-import java.util.*;
-public class Main
-{  
-	public static void main(String[] args) {
-	    Scanner sc=new Scanner(System.in);
-	    int n=sc.nextInt();
-	  int a[]=new int[n];
-	  for(int i=0;i<n;i++)
-	  {
-	      a[i]=sc.nextInt();
-	  }
-	  ArrayList<Integer> list = new ArrayList<Integer>();
-	  for(int i=0;i<n;i++)
-	  {
-	     list.add(a[i]); 
-	     for(int j=list.size()-1;j>0;j--)
-	     {
-	         if(list.get(j)>=list.get(j-1))
-	         break;
-	         Collections.swap(list,j,j-1);
-	         
-	     }
-	}
-	for(int i=0;i<n;i++)
-	{
-	    System.out.print(list.get(i)+" ");
-	}
-}
-}
+DEF:
+   Insertion sort is a simple sorting algorithm that works similar to the way you sort playing cards in your hands.
+   The array is virtually split into a sorted and an unsorted part.
+   Values from the unsorted part are picked and placed at the correct position in the sorted part.
 
 
-
-
-
-
-
-
-
-import java.util.*;
-public class Main
-{ 
+IMPLEMENTATION:
 
 public static void main(String[] args) { 
 Scanner sc=new Scanner(System.in);
@@ -48,16 +14,16 @@ int a[]=new int[n+1];
 for(int i=0;i<n;i++)
 a[i]=sc.nextInt();
 for(int i=1;i<n;i++){
-    t=a[i];
-    j=i-1;
-    while(j<=0 && a[i]>t){
-        a[j+1]=a[j];
-        j--;
-        
-    }
-    a[j+1]=t;
+ int key = a[i];
+ j = i - 1;
+while (j >= 0 && a[j] > key) {
+a[j + 1] = a[j];
+j = j - 1;
+}
+a[j + 1] = key;
 }
 for(int i=0;i<n;i++)
 System.out.println(a[i]);
 	}
 }
+
